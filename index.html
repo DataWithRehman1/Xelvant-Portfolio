@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Xelvant builds boutique data science and automation systems for scaling Shopify and Amazon brands." />
+  <meta name="theme-color" content="#f8fafc" />
+  <title>Xelvant — Data Science & Automation</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+          },
+          colors: {
+            brand: {
+              50: "#eff6ff",
+              100: "#dbeafe",
+              500: "#3b82f6",
+              600: "#2563eb",
+              700: "#1d4ed8",
+              950: "#172554",
+            },
+          },
+          boxShadow: {
+            soft: "0 24px 60px -28px rgba(15, 23, 42, 0.22)",
+            card: "0 14px 35px -22px rgba(15, 23, 42, 0.2)",
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    body {
+      background:
+        radial-gradient(circle at 50% -10%, rgba(37, 99, 235, 0.12), transparent 34rem),
+        #f8fafc;
+    }
+
+    .grid-pattern {
+      background-image:
+        linear-gradient(rgba(148, 163, 184, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
+      background-size: 32px 32px;
+      mask-image: linear-gradient(to bottom, black, transparent 85%);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 700ms ease, transform 700ms ease;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+    }
+  </style>
+</head>
+
+<body class="font-sans text-slate-900 antialiased selection:bg-brand-100 selection:text-brand-950">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:shadow-lg">
+    Skip to content
+  </a>
+
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-slate-200/70 bg-slate-50/80 backdrop-blur-xl">
+    <nav class="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-10" aria-label="Main navigation">
+      <a href="#" class="group flex items-center gap-2.5" aria-label="Xelvant home">
+        <span class="grid h-9 w-9 place-items-center rounded-xl bg-brand-600 text-sm font-extrabold text-white shadow-lg shadow-blue-600/20 transition-transform group-hover:-rotate-3">X</span>
+        <span class="text-xl font-extrabold tracking-tight text-slate-950">Xelvant</span>
+      </a>
+
+      <a href="https://xelvant.dev/contact" class="rounded-xl bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:-translate-y-0.5 hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 sm:px-5">
+        Book Strategy Call
+      </a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="relative isolate overflow-hidden px-5 pb-24 pt-36 sm:px-8 sm:pb-32 sm:pt-44 lg:px-10 lg:pt-48">
+      <div class="grid-pattern pointer-events-none absolute inset-0 -z-20"></div>
+      <div class="absolute left-1/2 top-16 -z-10 h-72 w-72 -translate-x-1/2 rounded-full bg-blue-300/20 blur-3xl sm:h-[30rem] sm:w-[30rem]"></div>
+
+      <div class="mx-auto max-w-5xl text-center">
+        <h1 class="reveal text-balance text-5xl font-extrabold leading-[1.05] tracking-[-0.045em] text-slate-950 sm:text-6xl lg:text-7xl">
+          Turn E-Commerce Data Into <span class="text-brand-600">Predictable Growth.</span>
+        </h1>
+
+        <p class="reveal mx-auto mt-7 max-w-3xl text-pretty text-lg leading-8 text-slate-600 sm:text-xl">
+          Transform complex store data into automated profit engines. We help elite e-commerce brands predict churn, optimize inventory, and scale effortlessly.
+        </p>
+
+        <div class="reveal mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <a href="https://xelvant.dev/contact" class="w-full rounded-xl bg-brand-600 px-6 py-3.5 text-center text-sm font-semibold text-white shadow-xl shadow-blue-600/20 transition hover:-translate-y-0.5 hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 sm:w-auto">
+            Book a Free Audit
+          </a>
+          <a href="#work" class="w-full rounded-xl border border-slate-300 bg-white/80 px-6 py-3.5 text-center text-sm font-semibold text-slate-700 shadow-sm backdrop-blur transition hover:-translate-y-0.5 hover:border-slate-400 hover:bg-white focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 sm:w-auto">
+            View Our Work
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="px-5 py-20 sm:px-8 sm:py-28 lg:px-10">
+      <div class="reveal mx-auto max-w-7xl overflow-hidden rounded-[2rem] bg-slate-950 px-6 py-14 text-white shadow-soft sm:px-12 sm:py-20 lg:px-20">
+        <div class="grid items-end gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-blue-400">Our philosophy</p>
+            <h2 class="mt-4 max-w-xl text-3xl font-bold tracking-tight sm:text-5xl">Stop Paying for Dashboards. Start Fixing the Store.</h2>
+          </div>
+          <p class="max-w-2xl text-lg leading-8 text-slate-300">
+            Most agencies will charge you thousands just to show you numbers you already know are bad. We don’t do that. We look at your store to find the exact bottlenecks—why customers aren't coming back, and why your ads cost too much. Then, we set up the systems to fix it. No fluff, just real growth.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="capabilities" class="scroll-mt-24 px-5 py-20 sm:px-8 sm:py-28 lg:px-10">
+      <div class="mx-auto max-w-7xl">
+        <div class="reveal max-w-2xl">
+          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-600">Core capabilities</p>
+          <h2 class="mt-4 text-3xl font-bold tracking-tight text-slate-950 sm:text-5xl">Intelligence built around your bottlenecks.</h2>
+        </div>
+
+        <div class="mt-12 grid gap-5 lg:grid-cols-2 lg:grid-rows-2">
+          <article class="reveal group relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-7 shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-soft sm:p-10 lg:row-span-2">
+            <div class="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-blue-100 blur-3xl transition group-hover:bg-blue-200"></div>
+            <div class="relative flex h-full min-h-80 flex-col">
+              <div class="grid h-14 w-14 place-items-center rounded-2xl bg-brand-600 text-white shadow-lg shadow-blue-600/20">
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" class="h-7 w-7" stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 21s8-4 8-10V5l-8-3-8 3v6c0 6 8 10 8 10Z" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+              </div>
+              <div class="mt-auto pt-16">
+                <span class="text-sm font-semibold text-brand-600">01 / Retention</span>
+                <h3 class="mt-3 text-2xl font-bold tracking-tight text-slate-950 sm:text-3xl">Customer Churn Prediction.</h3>
+                <p class="mt-4 max-w-md text-lg leading-8 text-slate-600">Stop losing loyal buyers. We build systems that alert you when a customer is likely to leave, allowing you to win them back proactively.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reveal group rounded-[2rem] border border-slate-200 bg-white p-7 shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-soft sm:p-9">
+            <div class="flex flex-col gap-8 sm:flex-row sm:items-center">
+              <div class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-violet-100 text-violet-700">
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" class="h-7 w-7" stroke="currentColor" stroke-width="1.8">
+                  <circle cx="8" cy="8" r="3" />
+                  <circle cx="16" cy="8" r="3" />
+                  <circle cx="12" cy="16" r="3" />
+                  <path d="m10.5 10.5 1.5 2.5 1.5-2.5" />
+                </svg>
+              </div>
+              <div>
+                <span class="text-sm font-semibold text-violet-700">02 / Segmentation</span>
+                <h3 class="mt-2 text-2xl font-bold tracking-tight text-slate-950">Smart Customer Segmentation.</h3>
+                <p class="mt-3 leading-7 text-slate-600">Stop generic marketing. We group your buyers by purchasing habits, ensuring your ads and emails bring in more sales at a lower cost.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reveal group rounded-[2rem] border border-slate-200 bg-white p-7 shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-soft sm:p-9">
+            <div class="flex flex-col gap-8 sm:flex-row sm:items-center">
+              <div class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-emerald-100 text-emerald-700">
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" class="h-7 w-7" stroke="currentColor" stroke-width="1.8">
+                  <path d="M3 20h18M5 17V9m5 8V4m5 13v-6m5 6V7" />
+                  <path d="m4 7 6-5 5 6 5-4" />
+                </svg>
+              </div>
+              <div>
+                <span class="text-sm font-semibold text-emerald-700">03 / Operations</span>
+                <h3 class="mt-2 text-2xl font-bold tracking-tight text-slate-950">Inventory &amp; Operations.</h3>
+                <p class="mt-3 leading-7 text-slate-600">Don't trap cash in dead stock. We set up automated trackers that monitor supply chains and tell you exactly what to reorder and when.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="scroll-mt-24 border-y border-slate-200 bg-white px-5 py-20 sm:px-8 sm:py-28 lg:px-10">
+      <div class="mx-auto max-w-7xl">
+        <div class="reveal flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
+          <div class="max-w-2xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-600">Featured work</p>
+            <h2 class="mt-4 text-3xl font-bold tracking-tight text-slate-950 sm:text-5xl">Proof in the numbers.</h2>
+          </div>
+          <p class="max-w-sm text-slate-500">Real systems designed to recover revenue, increase repeat purchases, and protect customer relationships.</p>
+        </div>
+
+        <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <article class="reveal group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-soft">
+            <div class="relative h-48 overflow-hidden bg-gray-200">
+              <div class="absolute inset-0 bg-gradient-to-br from-blue-100 via-slate-100 to-slate-200"></div>
+              <div class="absolute inset-x-6 bottom-0 top-8 rounded-t-xl border border-slate-300/80 bg-white/70 p-4 shadow-sm backdrop-blur transition-transform duration-500 group-hover:-translate-y-2">
+                <div class="flex items-center justify-between">
+                  <div class="h-2.5 w-20 rounded-full bg-slate-300"></div>
+                  <div class="h-6 w-6 rounded-lg bg-blue-500"></div>
+                </div>
+                <div class="mt-7 flex h-20 items-end gap-2">
+                  <span class="h-7 flex-1 rounded-t bg-blue-200"></span><span class="h-12 flex-1 rounded-t bg-blue-300"></span><span class="h-9 flex-1 rounded-t bg-blue-400"></span><span class="h-16 flex-1 rounded-t bg-blue-600"></span><span class="h-11 flex-1 rounded-t bg-blue-300"></span>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-1 flex-col p-6">
+              <p class="text-xs font-semibold uppercase tracking-wider text-brand-600">Revenue retention</p>
+              <h3 class="mt-3 text-xl font-bold text-slate-950">Olist Customer Churn Prediction</h3>
+              <p class="mt-3 leading-7 text-slate-600">Analyzed historical store data to flag unhappy customers early, preventing drop-offs and rescuing at-risk revenue.</p>
+              <a href="https://github.com/DataWithRehman1/Olist-E-Commerce" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex w-fit items-center gap-2 rounded-xl bg-slate-950 px-4 py-2.5 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-brand-600 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2" aria-label="View Olist Customer Churn Prediction on GitHub">
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
+                  <path d="M12 .7a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2.23c-3.22.7-3.9-1.37-3.9-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.72 1.27 3.38.97.1-.75.4-1.27.74-1.56-2.57-.29-5.27-1.28-5.27-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.16 1.18a10.9 10.9 0 0 1 5.75 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.71 5.38-5.29 5.67.42.36.79 1.06.79 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z"/>
+                </svg>
+                View on GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="reveal group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-soft">
+            <div class="relative h-48 overflow-hidden bg-gray-200">
+              <div class="absolute inset-0 bg-gradient-to-br from-violet-100 via-slate-100 to-slate-200"></div>
+              <div class="absolute inset-0 grid place-items-center">
+                <div class="relative h-32 w-48 transition-transform duration-500 group-hover:scale-105">
+                  <span class="absolute left-4 top-10 h-14 w-14 rounded-full bg-violet-400/80"></span>
+                  <span class="absolute left-20 top-3 h-20 w-20 rounded-full bg-blue-400/70"></span>
+                  <span class="absolute bottom-0 right-2 h-16 w-16 rounded-full bg-fuchsia-400/70"></span>
+                  <span class="absolute bottom-4 left-14 h-12 w-12 rounded-full bg-indigo-600/80"></span>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-1 flex-col p-6">
+              <p class="text-xs font-semibold uppercase tracking-wider text-violet-700">Repeat purchases</p>
+              <h3 class="mt-3 text-xl font-bold text-slate-950">E-Commerce Customer Segmentation</h3>
+              <p class="mt-3 leading-7 text-slate-600">Grouped buyers by purchasing behavior to trigger highly targeted campaigns, significantly increasing repeat purchases.</p>
+              <a href="#" class="mt-auto inline-flex w-fit items-center gap-2 rounded-xl bg-slate-950 px-4 py-2.5 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-brand-600 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2" aria-label="View E-Commerce Customer Segmentation on GitHub">
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
+                  <path d="M12 .7a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2.23c-3.22.7-3.9-1.37-3.9-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.72 1.27 3.38.97.1-.75.4-1.27.74-1.56-2.57-.29-5.27-1.28-5.27-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.16 1.18a10.9 10.9 0 0 1 5.75 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.71 5.38-5.29 5.67.42.36.79 1.06.79 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z"/>
+                </svg>
+                View on GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="reveal group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-soft md:col-span-2 lg:col-span-1">
+            <div class="relative h-48 overflow-hidden bg-gray-200">
+              <div class="absolute inset-0 bg-gradient-to-br from-emerald-100 via-slate-100 to-slate-200"></div>
+              <div class="absolute inset-x-7 top-7 rounded-xl border border-slate-300 bg-white/75 p-4 shadow-sm backdrop-blur transition-transform duration-500 group-hover:-translate-y-1">
+                <div class="flex items-center gap-3">
+                  <span class="grid h-9 w-9 place-items-center rounded-lg bg-emerald-100 text-emerald-700">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" class="h-5 w-5" stroke="currentColor" stroke-width="2"><path d="M3 12h18M12 3v18"/><circle cx="12" cy="12" r="8"/></svg>
+                  </span>
+                  <div class="flex-1">
+                    <div class="h-2.5 w-24 rounded-full bg-slate-300"></div>
+                    <div class="mt-2 h-2 w-16 rounded-full bg-slate-200"></div>
+                  </div>
+                  <span class="rounded-md bg-emerald-100 px-2 py-1 text-[10px] font-bold text-emerald-700">ON TIME</span>
+                </div>
+                <div class="mt-4 h-1.5 overflow-hidden rounded-full bg-slate-200"><div class="h-full w-4/5 rounded-full bg-emerald-500"></div></div>
+              </div>
+            </div>
+            <div class="flex flex-1 flex-col p-6">
+              <p class="text-xs font-semibold uppercase tracking-wider text-emerald-700">Proactive support</p>
+              <h3 class="mt-3 text-xl font-bold text-slate-950">Late Delivery Prediction</h3>
+              <p class="mt-3 leading-7 text-slate-600">Created a warning system to spot logistics delays early, allowing the brand to offer proactive support and protect customer reviews.</p>
+              <a href="https://github.com/DataWithRehman1/late-delivery-prediction" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex w-fit items-center gap-2 rounded-xl bg-slate-950 px-4 py-2.5 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-brand-600 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2" aria-label="View Late Delivery Prediction on GitHub">
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
+                  <path d="M12 .7a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2.23c-3.22.7-3.9-1.37-3.9-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.72 1.27 3.38.97.1-.75.4-1.27.74-1.56-2.57-.29-5.27-1.28-5.27-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.16 1.18a10.9 10.9 0 0 1 5.75 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.71 5.38-5.29 5.67.42.36.79 1.06.79 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z"/>
+                </svg>
+                View on GitHub
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-5 py-20 sm:px-8 sm:py-28 lg:px-10">
+      <div class="mx-auto max-w-7xl">
+        <div class="reveal mx-auto max-w-2xl text-center">
+          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-600">The founders</p>
+          <h2 class="mt-4 text-3xl font-bold tracking-tight text-slate-950 sm:text-5xl">Meet The Team.</h2>
+          <p class="mt-5 text-lg leading-8 text-slate-600">The people turning your store's data into clearer decisions, smoother operations, and stronger margins.</p>
+        </div>
+
+        <div class="mt-12 grid gap-5 md:grid-cols-3">
+          <article class="reveal rounded-2xl border border-slate-200 bg-white p-7 text-center shadow-card">
+            <div class="mx-auto grid h-24 w-24 place-items-center rounded-full bg-gradient-to-br from-blue-100 to-blue-300 text-2xl font-bold text-brand-700 ring-8 ring-blue-50">AR</div>
+            <h3 class="mt-6 text-lg font-bold text-slate-950">Abdul Rehman</h3>
+            <p class="mt-2 text-sm font-semibold text-brand-700">Data Scientist</p>
+            <p class="mt-3 leading-7 text-slate-600">Analyzes your store's data to uncover hidden patterns, building the core strategies that increase your revenue and improve customer retention.</p>
+          </article>
+
+          <article class="reveal rounded-2xl border border-slate-200 bg-white p-7 text-center shadow-card">
+            <div class="mx-auto grid h-24 w-24 place-items-center rounded-full bg-gradient-to-br from-violet-100 to-violet-300 text-2xl font-bold text-violet-700 ring-8 ring-violet-50">AZ</div>
+            <h3 class="mt-6 text-lg font-bold text-slate-950">Ali Zain</h3>
+            <p class="mt-2 text-sm font-semibold text-violet-700">AI/ML Engineer</p>
+            <p class="mt-3 leading-7 text-slate-600">Builds and deploys the custom machine learning models that automate your operations, turning complex algorithms into seamless business tools.</p>
+          </article>
+
+          <article class="reveal rounded-2xl border border-slate-200 bg-white p-7 text-center shadow-card">
+            <div class="mx-auto grid h-24 w-24 place-items-center rounded-full bg-gradient-to-br from-emerald-100 to-emerald-300 text-2xl font-bold text-emerald-700 ring-8 ring-emerald-50">NN</div>
+            <h3 class="mt-6 text-lg font-bold text-slate-950">Noman Niaz</h3>
+            <p class="mt-2 text-sm font-semibold text-emerald-700">Data Analyst</p>
+            <p class="mt-3 leading-7 text-slate-600">Translates complex numbers into clear, easy-to-read dashboards, ensuring you always have a perfect view of your store's performance and ROI.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="scroll-mt-20 px-5 pb-5 pt-8 sm:px-8 lg:px-10">
+      <div class="reveal relative mx-auto max-w-7xl overflow-hidden rounded-[2rem] bg-brand-600 px-6 py-16 text-center text-white shadow-2xl shadow-blue-600/20 sm:px-12 sm:py-24">
+        <div class="absolute -left-24 -top-24 h-72 w-72 rounded-full border-[50px] border-white/5"></div>
+        <div class="absolute -bottom-28 -right-20 h-80 w-80 rounded-full bg-blue-400/30 blur-2xl"></div>
+        <div class="relative">
+          <p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue-100">Your next move</p>
+          <h2 class="mt-4 text-4xl font-extrabold tracking-tight sm:text-6xl">Ready to scale your store?</h2>
+          <a href="https://xelvant.dev/contact" class="mt-9 inline-flex rounded-xl bg-white px-7 py-3.5 text-sm font-bold text-brand-700 shadow-xl transition hover:-translate-y-0.5 hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-brand-600">
+            Book Your Free Audit
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="px-5 py-8 sm:px-8 lg:px-10">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 text-sm text-slate-500 sm:flex-row">
+      <a href="#" class="font-bold text-slate-900">Xelvant</a>
+      <p>© 2026 Xelvant. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const revealElements = document.querySelectorAll(".reveal");
+
+    if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      revealElements.forEach((element, index) => {
+        element.style.transitionDelay = `${Math.min(index % 4, 3) * 80}ms`;
+        observer.observe(element);
+      });
+    } else {
+      revealElements.forEach((element) => element.classList.add("is-visible"));
+    }
+  </script>
+</body>
+</html>
