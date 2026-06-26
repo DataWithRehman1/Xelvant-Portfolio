@@ -39,6 +39,10 @@
   </script>
 
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       background:
         radial-gradient(circle at 50% -10%, rgba(37, 99, 235, 0.12), transparent 34rem),
@@ -81,20 +85,27 @@
   </a>
 
   <header class="fixed inset-x-0 top-0 z-50 border-b border-slate-200/70 bg-slate-50/80 backdrop-blur-xl">
-    <nav class="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-10" aria-label="Main navigation">
-      <a href="#" class="group flex items-center gap-2.5" aria-label="Xelvant home">
+    <nav class="mx-auto flex h-20 max-w-7xl items-center gap-4 px-5 sm:px-8 lg:px-10" aria-label="Main navigation">
+      <a href="#home" class="group flex items-center gap-2.5" aria-label="Xelvant home">
         <span class="grid h-9 w-9 place-items-center rounded-xl bg-brand-600 text-sm font-extrabold text-white shadow-lg shadow-blue-600/20 transition-transform group-hover:-rotate-3">X</span>
         <span class="text-xl font-extrabold tracking-tight text-slate-950">Xelvant</span>
       </a>
 
-      <a href="https://xelvant.dev/contact" class="rounded-xl bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:-translate-y-0.5 hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 sm:px-5">
+      <div class="hidden flex-1 items-center justify-center gap-2 md:flex">
+        <a href="#home" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition hover:text-brand-600 focus:outline-none focus:text-brand-600">Home</a>
+        <a href="#services" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition hover:text-brand-600 focus:outline-none focus:text-brand-600">Services</a>
+        <a href="#work" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition hover:text-brand-600 focus:outline-none focus:text-brand-600">Our Work</a>
+        <a href="#team" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition hover:text-brand-600 focus:outline-none focus:text-brand-600">Team</a>
+      </div>
+
+      <a href="#contact" class="ml-auto rounded-xl bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:-translate-y-0.5 hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 sm:px-5">
         Book Strategy Call
       </a>
     </nav>
   </header>
 
   <main id="main-content">
-    <section class="relative isolate overflow-hidden px-5 pb-24 pt-36 sm:px-8 sm:pb-32 sm:pt-44 lg:px-10 lg:pt-48">
+    <section id="home" class="scroll-mt-24 relative isolate overflow-hidden px-5 pb-24 pt-36 sm:px-8 sm:pb-32 sm:pt-44 lg:px-10 lg:pt-48">
       <div class="grid-pattern pointer-events-none absolute inset-0 -z-20"></div>
       <div class="absolute left-1/2 top-16 -z-10 h-72 w-72 -translate-x-1/2 rounded-full bg-blue-300/20 blur-3xl sm:h-[30rem] sm:w-[30rem]"></div>
 
@@ -108,7 +119,7 @@
         </p>
 
         <div class="reveal mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <a href="https://xelvant.dev/contact" class="w-full rounded-xl bg-brand-600 px-6 py-3.5 text-center text-sm font-semibold text-white shadow-xl shadow-blue-600/20 transition hover:-translate-y-0.5 hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 sm:w-auto">
+          <a href="#contact" class="w-full rounded-xl bg-brand-600 px-6 py-3.5 text-center text-sm font-semibold text-white shadow-xl shadow-blue-600/20 transition hover:-translate-y-0.5 hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-600 focus:ring-offset-2 sm:w-auto">
             Book a Free Audit
           </a>
           <a href="#work" class="w-full rounded-xl border border-slate-300 bg-white/80 px-6 py-3.5 text-center text-sm font-semibold text-slate-700 shadow-sm backdrop-blur transition hover:-translate-y-0.5 hover:border-slate-400 hover:bg-white focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 sm:w-auto">
@@ -133,7 +144,7 @@
       </div>
     </section>
 
-    <section id="capabilities" class="scroll-mt-24 px-5 py-20 sm:px-8 sm:py-28 lg:px-10">
+    <section id="services" class="scroll-mt-24 px-5 py-20 sm:px-8 sm:py-28 lg:px-10">
       <div class="mx-auto max-w-7xl">
         <div class="reveal max-w-2xl">
           <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-600">Core capabilities</p>
@@ -290,7 +301,7 @@
       </div>
     </section>
 
-    <section class="px-5 py-20 sm:px-8 sm:py-28 lg:px-10">
+    <section id="team" class="scroll-mt-24 px-5 py-20 sm:px-8 sm:py-28 lg:px-10">
       <div class="mx-auto max-w-7xl">
         <div class="reveal mx-auto max-w-2xl text-center">
           <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-600">The founders</p>
@@ -340,7 +351,7 @@
 
   <footer class="px-5 py-8 sm:px-8 lg:px-10">
     <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 text-sm text-slate-500 sm:flex-row">
-      <a href="#" class="font-bold text-slate-900">Xelvant</a>
+          <a href="#home" class="font-bold text-slate-900">Xelvant</a>
       <p>© 2026 Xelvant. All rights reserved.</p>
     </div>
   </footer>
